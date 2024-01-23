@@ -91,8 +91,50 @@
 </table>
   <tbody>
     <table style="width: 60%; height: 50px;">
+  
   <!-- Aquí van tus filas y columnas de la tabla -->
+    <title>Tabla</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
 
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilo para la primera celda de cada fila */
+        tr td:first-child {
+            font-weight: bold;
+            color: blue; /* Puedes ajustar el color según tus preferencias */
+        }
+
+        /* Estilo para la segunda celda de cada fila */
+        tr td:nth-child(2) {
+            font-size: 18px;
+            color: green; /* Puedes ajustar el color según tus preferencias */
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aplicar estilos a cada celda de esta fila -->
+            <tr>
 
             <tr><td>Atención remota o a domicilio  </td><td>$5.00</td></tr>
             <tr><td>Mantenimiento</td><td>$15.00</td></tr>
@@ -111,6 +153,9 @@
             <tr><td>Configuraciones del sistema</td><td>$10.00</td></tr>
 
   </tbody>
+  </table>
+
+</body>
 
    <tbody>
 
